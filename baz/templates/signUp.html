@@ -1,40 +1,33 @@
 {% load staticfiles %}
-
+{% if messg %}
+    <script>
+        alert('{{ messg }}');
+    </script>
+{% endif %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'signUp.css' %}">
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 
-    <title>SignUp</title>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'signUp.css' %}">
+    <title>Sign Up</title>
 </head>
 <body>
-
 <h1>
 
-    <script>
-        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error)
-        {
-             // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-             // ...
-        });email-password.html
-    </script>
-
-    <form class="form" action="/postsign/" method="post">
+    <form class="form" action="/postsignup/" method="post">
         {% csrf_token %}
+        Name:
+        <input type="text" name="name"><br><br>
         Email:
-        <input type="email" name="email" value="">
+        <input type="email" name="email" value=""><br><br>
         Password:
-        <input type="password" name="pass" value="">
-        <input type="submit" value="signIn">
-
+        <input type="password" name="pass" value=""><br><br>
+        <input type="submit" value="Sign Up">
     </form>
 </h1>
-
+<br>
 
 
 </body>
