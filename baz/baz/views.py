@@ -47,8 +47,16 @@ def signup(request):
 
 
 def postsignup(request):
+
     name = request.POST.get('name')
     email = request.POST.get('email')
-    passw = request.p.get('pass')
+    passw = request.POST.get('pass')
 
     user = authe.create_user_with_email_and_password(email, passw)
+
+    uid = user['localId']
+
+    data = {"name": name, "status": "1"}
+
+    database.child("users").child(uid).child("details").set(data)
+    return render(request, "signIn.html")
