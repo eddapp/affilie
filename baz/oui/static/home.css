@@ -1,0 +1,18 @@
+/*index style sheet*/ /* home.css  */
+{
+%
+load
+staticfiles
+%
+}
+h1 {
+    font: bold;
+    font-size: 36pt;
+}
+
+h2 {
+    font-size: 36pt;
+    font: bold;
+    font-family: "Courier New";
+    font-variant-emoji: auto;
+}

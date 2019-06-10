@@ -1,0 +1,31 @@
+/* Sign In Stylesheet */
+{% load staticfiles %}
+
+/*h1 {*/
+    /*background-image: url("images/snakpytlogo.jpg");*/
+    /*!*background-repeat: no-repeat;*!*/
+    /*!*background-size: 500px 500px;*!*/
+    /*!*display: block;*!*/
+    /*!*margin-left: auto;*!*/
+    /*!*margin-right: auto;*!*/
+    /*!*width: 50%;*!*/
+/*}*/
+
+body {
+    background-image: url("images/snakpytlogo.jpg");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 50%;
+}
+
+
+form {
+    text-align: center;
+    border: 36px crimson;
+    font-size: 21pt;
+}
+
+

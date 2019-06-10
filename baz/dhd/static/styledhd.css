@@ -1,0 +1,18 @@
+/*styledhd.css*/
+
+.body {
+    background: #333;
+    font: 100%/1 "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.p {
+    text-align: center;
+    text-shadow: 30px;
+    font-size: 40px;
+}
+
+.butter {
+    text-align: center;
+
+}

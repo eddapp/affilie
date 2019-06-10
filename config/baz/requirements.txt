@@ -1,0 +1,12 @@
+Django
+django-rest
+gunicorn
+psycopg2
+Flask
+psycopg2-binary
+Redis
+pyrebase
+flake8
+stream-python
+black
+heroku

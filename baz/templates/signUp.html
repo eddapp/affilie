@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'signUp.css' %}">
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <title>SignUp</title>
+</head>
+<body>
+
+<h1>
+
+    <script>
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error)
+        {
+             // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+             // ...
+        });email-password.html
+    </script>
+
+    <form class="form" action="/postsign/" method="post">
+        {% csrf_token %}
+        Email:
+        <input type="email" name="email" value="">
+        Password:
+        <input type="password" name="pass" value="">
+        <input type="submit" value="signIn">
+
+    </form>
+</h1>
+
+
+
+</body>
+</html>

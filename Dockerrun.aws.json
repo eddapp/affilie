@@ -1,0 +1,12 @@
+{
+ "AWSEBDockerrunVersion": "1",
+ "Image": {
+   "Name": "wukogan/affilie:latest",
+   "Update": "true"
+ },
+ "Ports": [
+   {
+     "ContainerPort": "8000"
+   }
+ ]
+}

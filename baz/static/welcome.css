@@ -1,0 +1,16 @@
+/* Welcome Stylesheet */
+{% load staticfiles %}
+h1 {
+    text-align: center;
+    font-size: 36pt;
+}
+
+body {
+    background-image: url("images/snakpytlogo.jpg");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 50%;
+}

@@ -1,0 +1,80 @@
+` /*style.css*/
+.butter {
+    text-align: center;
+    font-size: 84px;
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 84px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.redtext {
+    color: red;
+
+}
+
+.date {
+    color: black;
+
+}
+
+
+.close {
+    text-align: center;
+    font-size: 300%;
+}
+
+.open {
+    font: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    position: inherit;
+    text-indent: 50px;
+    font-size: 28px;
+}
+
+body {
+    background-color: E6DEDC;
+    color: #001c29;
+
+
+}
+
+footer {
+    color: E6DEDC;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.title {
+    color: #ffe3d6;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.article {
+    color: #006d9f;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: inherit right;
+    font-size: 18px;
+}
+
+
+iframe {
+    text-align: center
+}
+
+.date {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px
+}
+
+.center {
+    text-align: center;
+
+}

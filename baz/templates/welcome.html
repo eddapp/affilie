@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'welcome.css' %}">
+    <title>
+        Welcome
+    </title>
+</head>
+<body>
+{% csrf_token %}
+Welcome {{ e }}
+<br>
+<h1>
+    website:
+    <a href="{% url 'oui:home' %}">
+        Oui
+    </a>
+
+    <br>
+    <div>
+        <button type="button" onclick="location.href='{% url 'log' %}'">Logout</button>
+
+</h1>
+    </div>
+
+</body>
+</html>

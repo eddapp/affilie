@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    hostname: db
+  baz:
+    build:
+      context: .
+      dockerfile: config/baz/Dockerfile
+    command: sh /config/on-container-start.sh
+    hostname: baz
+    volumes:
+      - ./baz:/baz
+    expose:
+      - "8000"
+    depends_on:
+      - db
+  nginx:
+    image: nginx:latest
+    hostname: nginx
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - baz
