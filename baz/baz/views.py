@@ -62,3 +62,9 @@ def postsignup(request):
 
     database.child("users").child(uid).child("details").set(data)
     return render(request, "signIn.html")
+
+
+do
+you
+see
+this
